@@ -11,7 +11,7 @@ class aBST:
         while current_index < self.tree_size:
             if self.Tree[current_index] is None:
                 return -current_index
-            if self.Tree[current_index] == key:
+            elif self.Tree[current_index] == key:
                 return current_index
             elif self.Tree[current_index] < key :
                 current_index = current_index * 2 + 2
